@@ -1,0 +1,16 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clinic Queue</title>
+</head>
+<body>
+    <h1>Clinic Waiting List</h1>
+    <ul>
+        {% for patient in patients %}
+            <li>{{ patient }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/add">Add Patient</a>
+</body>
+</html>
